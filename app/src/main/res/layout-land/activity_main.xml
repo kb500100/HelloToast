@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E01E"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        tools:layout_editor_absoluteY="98dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="731dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/colorPrimary"
+        android:baselineAligned="false"
+        android:onClick="countUp"
+        android:text="@string/count_initial_value"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="741dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:baselineAligned="false"
+        android:onClick="showToast"
+        android:text="@string/button_label_toast"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>
